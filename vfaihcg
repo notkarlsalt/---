@@ -1,2 +1,806 @@
---idk js testing
---lmao
+-- Important Github Repository: "https://raw.githubusercontent.com/notkarlsalt/---/2f56c929165a10ee9c7425df7e70583b6f73d0db/vfaihcg"
+-- loadstring for the Github Repository is: "loadstring(game:HttpGet("https://raw.githubusercontent.com/notkarlsalt/---/2f56c929165a10ee9c7425df7e70583b6f73d0db/vfaihcg"))()"
+-- to edit must go on bakirbutkovic543 email
+
+
+
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/AnthonyIsntHere/anthonysrepository/main/scripts/AntiChatLogger.lua'))()
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/Rafacasari/ArrayField/main/v2.lua'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "V3rg.byp | https://dsc.gg/v3rge | V1.3.5",
+   LoadingTitle = "V3rge's Bypassing Limits",
+   LoadingSubtitle = "Lets cuss at kids!",
+	LoadingSubtitle = "Lets cuss at kids!",
+    OldTabLayout = true,
+	ConfigurationSaving = {
+		Enabled = false,
+		FolderName = nil,
+		FileName = "Big Hub",
+	},
+	Discord = {
+		Enabled = true,
+		Invite = "dsc.gg/v3rge",
+		RememberJoins = true,
+	},
+	KeySystem = false,
+	KeySettings = {
+		Title = "key at:",
+		Subtitle = "dsc.gg/v3rge",
+		Note = "The key changes every 2 weeks or so!",
+		FileName = "SiriusKey",
+		SaveKey = true,
+		GrabKeyFromSite = false,
+		Key = "MenaceV2IsSkiddingFromUsRn",
+	},
+})
+
+local Home = Window:CreateTab("Home")
+local HomeSection1 = Home:CreateSection("Welcome", false)
+
+local Paragraph = Home:CreateParagraph({
+	Title = "Welcome!",
+	Content = "Join our discord: https://dsc.gg/v3rge",
+}, HomeSection1)
+
+local Button = Home:CreateButton({
+   Name = "Discord | Click To Copy (TW: Small Server)",
+Interact = "Copy",
+	SectionParent = HomeSection1,
+   Callback = function()
+        setclipboard("https://dsc.gg/v3rge")
+   end,
+}) 
+
+local Button = Home:CreateButton({
+   Name = "Toggle interface (MOBILE Support)",
+Interact = "Execute",
+	SectionParent = HomeSection1,
+   Callback = function()
+--chat gpt vrs:
+
+local Toggle = Instance.new("ScreenGui")
+local UIToggle = Instance.new("TextButton")
+
+Toggle.Name = "Toggle"
+Toggle.Parent = game.CoreGui
+
+UIToggle.Name = "UIToggle"
+UIToggle.Parent = Toggle
+UIToggle.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+UIToggle.BackgroundTransparency = 0
+UIToggle.Position = UDim2.new(0, 0, 0.454706937, 0)
+UIToggle.Size = UDim2.new(0.0650164187, 0, 0.0888099447, 0)
+UIToggle.Font = Enum.Font.SourceSans
+UIToggle.Text = "Toggle"
+UIToggle.TextColor3 = Color3.fromRGB(75, 0, 130)
+UIToggle.TextSize = 24.000
+UIToggle.TextXAlignment = Enum.TextXAlignment.Left
+UIToggle.MouseButton1Click:Connect(function()
+    game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.K, false, game)
+end)
+
+UIToggle.Draggable = true
+   end,
+})
+
+local Button = Home:CreateButton({
+   Name = "Hide Interface",
+Interact = "Execute",
+	SectionParent = HomeSection1,
+   Callback = function()
+game:GetService("VirtualInputManager"):SendKeyEvent(true,Enum.KeyCode.K,false,game)
+   end,
+})
+
+local Button = Home:CreateButton({
+   Name = "Close Interface",
+Interact = "Execute",
+	SectionParent = HomeSection1,
+   Callback = function()
+Rayfield:Destroy()
+   end,
+})
+
+local HomeSection2 = Home:CreateSection("Credits", false)
+local Credits1 = Home:CreateLabel("B4krs - Development and bypassing.", HomeSection2)
+local Credits2 = Home:CreateLabel("Dank6s - Script setup", HomeSection2)
+local Credits3 = Home:CreateLabel("Sauce_boss01 - Made some Bypasses", HomeSection2)
+local Credits4 = Home:CreateLabel("clickgameplay - Made some Bypasses", HomeSection2)
+local Credits5 = Home:CreateLabel("N4 - Made some Bypasses", HomeSection2)
+local Credits6 = Home:CreateLabel("d34dly - Made some Bypasses", HomeSection2)
+
+local HomeSection3 = Home:CreateSection("Help", false)
+local Credits1 = Home:CreateLabel("Toggle script with K.", HomeSection3)
+local Credits2 = Home:CreateLabel("Your account must be 13+ for everything to work.", HomeSection3)
+local Credits3 = Home:CreateLabel("If something gets tagged, say something normal and try again.", HomeSection3)
+local Credits4 = Home:CreateLabel("Everyone can see the things you say in chat.", HomeSection3)
+local Credits5 = Home:CreateLabel("For more info go to the Discord", HomeSection3)
+
+local HomeSection4 = Home:CreateSection("More V3rge/B4krs Scripts", false)
+local Button = Home:CreateButton({
+   Name = "Horrific Housing V3rg. (Closes this GUI (buggy))",
+Interact = "Execute",
+	SectionParent = HomeSection4,
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BakaPraselol/HH-loader1/main/HH"))()
+   end,
+})
+
+local Paragraph = Home:CreateParagraph({
+	Title = "More Coming soon (maybe..)",
+	Content = "Making scripts actually work...",
+}, HomeSection4)
+
+function Chat(message)
+	local args = {
+		[1] = message,
+		[2] = "All",
+	}
+
+	game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end
+
+local PickupLines = Window:CreateTab("Bypassed Words")
+local PickupLinesSection0 = PickupLines:CreateSection("Extra", false)
+
+local Button = Home:CreateButton({
+   Name = "Manual Chat Bypass",
+Interact = "Execute",
+	SectionParent = PickupLinesSection0,
+    Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {Title="Activated"; Text="list of all manual bypasses is in console. "; Duration=5;})
+print(string.format("v3g.MCB: The Manual Chat Bypasses has every bypass from the script with some extra ones, for example:"))
+print(string.format("wife, suck, bitch(sometimes works in lowercase), fucking(sometimes works), fuck(sometimes works).. And more!"))
+
+repeat task.wait() until game:IsLoaded()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthonyIsntHere/anthonysrepository/main/scripts/AntiChatLogger.lua", true))()
+wait() --updatelogger6
+local chatService, players = game:GetService("Chat"), game:GetService("Players") --updatefixer2
+
+local custom_chars = {
+		[" "] = "",
+		["stfu"] = "ѕ󠀕󠀕t󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕⁥⁥⁥⁥f󠀖󠀕⁥⁥⁥u",
+		["asshole"] = "аѕѕ⁥⁥⁥һоlе",
+		["ass"] = "а⁥⁥⁥ѕ⁥⁥⁥ѕ",
+		["arse"] = "аr⁥⁥ѕ⁥е",
+		["anal"] = "аn⁥⁥⁥⁥аl",
+		["blowjob"] = "Blow⁥⁥⁥j⁥⁥⁥о⁥⁥⁥b⁥⁥⁥",
+		["boner"] = "⁥В⁥⁥o⁥⁥n⁥⁥е⁥⁥r",
+		["boobies"] = "bо⁥⁥⁥⁥⁥⁥⁥⁥оbіеs",
+		["bullshit"] = "bulӏsһ⁥⁥⁥⁥⁥⁥⁥⁥іt",
+		["bastard"] = "bas⁥⁥⁥⁥⁥⁥⁥⁥tard",
+		["beaner"] = "b⁥⁥⁥е⁥⁥⁥а⁥⁥⁥n⁥⁥⁥е⁥⁥⁥r",
+		["butthole"] = "bu⁥⁥⁥⁥⁥⁥⁥⁥tthоle",
+		["bootyhole"] = "b⁥⁥⁥о⁥⁥⁥о⁥⁥⁥t⁥⁥⁥уhole",
+		["butt"] = "bu⁥⁥⁥⁥⁥⁥⁥⁥tt",
+		["booty"] = "bооty",
+		["boobs"] = "bооbѕ",
+		["boob"] = "bооb",
+		["breasts"] = "brеаѕtѕ",
+		["bbc"] = "b⁥⁥⁥b⁥⁥⁥с",
+		["bitch"] = "b󠀕󠀖󠀗󠀘￰￰󠀕󠀖󠀗󠀘і󠀕󠀖󠀗󠀘󠀕󠀖￰￰￰￰￰￰￰￰￰￰￰￰￰￰󠀗󠀘t󠀕￰￰￰￰￰￰￰󠀖󠀗󠀘󠀕󠀖󠀗󠀘с󠀗󠀘󠀗󠀘￰￰￰󠀗󠀘һ",
+		["Bitch"] = "B󠀕󠀖󠀗󠀘￰￰󠀕󠀖󠀗󠀘і󠀕󠀖󠀗󠀘󠀕󠀖￰￰￰￰￰￰￰￰￰￰￰￰￰￰󠀗󠀘t󠀕￰￰￰￰￰￰￰󠀖󠀗󠀘󠀕󠀖󠀗󠀘с󠀗󠀘󠀗󠀘￰￰￰󠀗󠀘һ",
+		["bitches"] = "b󠀕󠀖󠀗󠀘￰￰󠀕󠀖󠀗󠀘i󠀕󠀖󠀗󠀘󠀕󠀖￰￰￰￰￰￰￰￰￰￰￰￰￰￰󠀗󠀘t󠀕￰￰￰￰￰￰￰󠀖󠀗󠀘󠀕󠀖󠀗󠀘c󠀗󠀘󠀗󠀘￰￰￰󠀗󠀘һes",
+		["Bitches"] = "B󠀕󠀖󠀗󠀘￰￰󠀕󠀖󠀗󠀘i󠀕󠀖󠀗󠀘󠀕󠀖￰￰￰￰￰￰￰￰￰￰￰￰￰￰󠀗󠀘t󠀕￰￰￰￰￰￰￰󠀖󠀗󠀘󠀕󠀖󠀗󠀘c󠀗󠀘󠀗󠀘￰￰￰󠀗󠀘һes",
+		["cocaine"] = "с⁥⁥⁥о⁥⁥⁥с⁥⁥⁥а⁥⁥⁥i⁥⁥⁥n⁥⁥⁥е",
+		["creampie"] = "с⁥⁥⁥r⁥⁥⁥е⁥⁥⁥а⁥⁥⁥m⁥⁥⁥р⁥⁥⁥i⁥⁥⁥е",
+		["cum"] = "с⁥⁥⁥⁥um",
+		["cunts"] = "сu⁥⁥⁥⁥⁥⁥⁥⁥ntѕ",
+		["cunt"] = "c󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕u⁥⁥⁥⁥󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕n⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥t",
+		["cock"] = "с⁥⁥⁥о⁥⁥⁥с⁥⁥⁥k",
+		["cuck"] = "с⁥⁥⁥u⁥⁥⁥с⁥⁥⁥k",
+		["cuckold"] = "с⁥⁥⁥u⁥⁥⁥с⁥⁥⁥k⁥⁥⁥о⁥⁥⁥ӏ⁥⁥⁥d⁥⁥⁥",
+		["condoms"] = "с⁥⁥⁥о⁥⁥⁥n⁥⁥⁥d⁥⁥⁥о⁥⁥⁥m⁥⁥⁥s",
+		["condom"] = "с⁥⁥⁥о⁥⁥⁥n⁥⁥⁥d⁥⁥⁥о⁥⁥⁥m",
+		["coochies"] = "cooс⁥⁥⁥һ⁥⁥⁥i⁥⁥⁥es",
+		["coochie"] = "с⁥⁥⁥о⁥⁥⁥o⁥⁥⁥с⁥⁥⁥һ⁥⁥⁥i⁥⁥⁥е",
+		["dumbass"] = "du⁥⁥⁥⁥⁥⁥mb⁥⁥⁥⁥⁥⁥аѕѕ",
+		["discord"] = "dіѕсоrd",
+		["dickhead"] = "d󠀕󠀖󠀗󠀘￰￰￰￰￰󠀕󠀖󠀗󠀘і󠀕󠀖󠀗󠀘󠀕󠀖￰￰￰￰￰󠀗󠀘c󠀕￰￰￰￰￰󠀖󠀗󠀘󠀕󠀖󠀗󠀘k󠀗󠀘󠀗󠀘h󠀗󠀘￰￰￰￰￰󠀖󠀗󠀘󠀕󠀖ead",
+		["dick"] = "d⁥⁥⁥⁥i󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕⁥⁥⁥⁥c󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕⁥⁥⁥⁥k",
+		["damn"] = "d⁥⁥⁥а⁥⁥⁥m⁥⁥⁥n⁥⁥⁥",
+		["fatass"] = "fat￰￰￰а￰￰￰￰￰￰￰￰￰￰￰￰⁥ѕ￰￰ѕ",
+		["fucked"] = "f￰￰￰￰￰￰uс￰￰￰￰￰￰￰￰k￰￰￰￰￰￰￰￰e￰￰￰￰d",
+		["femboy"] = "fеmbоy",
+		["femboys"] = "fеmbоys",
+		["horny"] = "hоrnу",
+		["hitler"] = "Нi⁥⁥⁥⁥⁥⁥⁥⁥tӏ⁥⁥⁥⁥⁥⁥⁥⁥е⁥⁥r",
+		["hoes"] = "һоеѕ",
+		["hoe"] = "һое",
+		["kys"] = "k⁥⁥⁥⁥⁥⁥⁥⁥y⁥⁥⁥ѕ",
+		["lmfao"] = "ӏm⁥⁥⁥⁥⁥⁥⁥⁥fа⁥⁥о",
+		["lmaoo"] = "ӏ⁥⁥⁥m⁥⁥⁥а⁥⁥⁥о⁥⁥⁥о",
+		["motherfucker"] = "mot￰￰￰￰￰￰￰h￰e￰rf￰￰￰￰￰u￰с￰￰￰￰￰￰￰￰k￰e￰￰￰￰￰￰￰￰r",
+		["masturbates"] = "М⁥⁥⁥а⁥⁥⁥ѕ⁥⁥⁥t⁥⁥⁥u⁥⁥⁥r⁥⁥⁥b⁥⁥⁥а⁥⁥⁥t⁥⁥⁥е",
+		["masturbating"] = "m⁥⁥⁥а⁥⁥⁥ѕ⁥⁥⁥t⁥⁥⁥u⁥⁥⁥r⁥⁥⁥b⁥⁥⁥а⁥⁥⁥t⁥⁥⁥ing",
+		["meth"] = "mе⁥⁥⁥⁥⁥⁥⁥⁥th",
+		["naked"] = "nаkеd",
+		["nudes"] = "nudеѕ",
+		["orgasm"] = "оrg⁥⁥⁥⁥аѕm",
+		["omfg"] = "оm⁥⁥⁥⁥⁥⁥⁥⁥fg",
+		["pedophile"] = "p⁥⁥е⁥⁥⁥d⁥⁥⁥⁥⁥⁥⁥ор⁥⁥hіӏ⁥⁥⁥⁥⁥⁥⁥е",
+		["pornhub"] = "роrnhub",
+		["penis"] = "pen󠀕󠀖󠀗󠀘󠀕󠀖⁥⁥⁥⁥⁥⁥⁥⁥󠀕і󠀖󠀗󠀘󠀖󠀗ѕ",
+		["porn"] = "роrn",
+		["pussies"] = "р⁥⁥⁥u⁥⁥⁥s⁥⁥⁥s⁥⁥⁥i⁥⁥⁥е⁥⁥⁥s",
+		["pussy"] = "р⁥⁥⁥u⁥⁥⁥s⁥⁥⁥s⁥⁥⁥у",
+		["rape"] = "rаре",
+		["stripper"] = "ѕtrірреr",
+		["slave"] = "ѕ⁥⁥⁥ӏ⁥⁥⁥а⁥⁥⁥v⁥⁥⁥е",
+		["seduce"] = "ѕеduсе",
+		["slut"] = "ѕӏ⁥⁥⁥⁥⁥⁥⁥⁥ut",
+		["shit"] = "⁥⁥⁥ѕ⁥⁥⁥h⁥⁥⁥i⁥⁥⁥t",
+		["sexy"] = "ѕеху",
+		["sex"] = "ѕ⁥⁥⁥е⁥⁥⁥х⁥⁥⁥",
+		["retarded"] = "rеtаrded",
+		["retard"] = "r⁥⁥⁥⁥e⁥⁥⁥t⁥⁥⁥⁥a⁥⁥⁥r⁥⁥⁥⁥d",
+		["titties"] = "t⁥⁥⁥⁥⁥⁥і⁥⁥⁥⁥⁥⁥t⁥⁥⁥⁥⁥⁥t⁥⁥⁥⁥⁥⁥і⁥⁥⁥⁥⁥⁥е⁥⁥⁥⁥⁥⁥ѕ",
+		["thots"] = "t⁥⁥⁥⁥⁥⁥⁥⁥h⁥⁥⁥⁥⁥⁥⁥⁥otѕ",
+		["thot"] = "t⁥⁥⁥⁥⁥⁥⁥⁥h⁥⁥⁥⁥⁥⁥⁥⁥ot",
+		["tits"] = "t⁥⁥⁥⁥⁥⁥⁥⁥і⁥⁥⁥⁥⁥⁥⁥⁥ts",
+		["tit"] = "tіt",
+		["virginity"] = "v￰￰￰￰￰￰і￰￰￰￰￰￰￰￰r￰￰￰￰￰￰￰￰g￰￰￰￰￰￰￰￰￰і￰￰￰￰￰￰￰￰n￰￰￰￰￰￰￰і￰￰￰￰t￰￰￰у",
+		["virgins"] = "v￰￰￰￰￰￰і￰￰￰￰￰￰￰￰r￰￰￰￰￰￰￰￰g￰￰￰￰￰￰￰￰￰і￰￰￰￰￰￰￰￰n￰￰￰￰￰￰￰s",
+		["vagina"] = "v󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕a󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕g󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕і󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕n󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕a",
+		["virgin"] = "v󠀕󠀖󠀗󠀘￰￰￰￰￰￰󠀕󠀖󠀗󠀘і󠀕󠀖󠀗󠀘󠀕󠀖￰￰￰￰￰￰￰￰󠀗󠀘r󠀕￰￰￰￰￰￰￰￰󠀖󠀗󠀘󠀕󠀖󠀗󠀘g󠀖󠀗󠀘󠀕󠀖󠀗󠀘￰￰￰￰￰￰￰￰￰󠀗󠀘і󠀘󠀕󠀖󠀘󠀕￰￰￰￰￰￰￰￰n",
+		["whore"] = "w⁥⁥⁥һ⁥⁥⁥о⁥⁥⁥r⁥⁥⁥е",
+		["ASS"] = "АЅЅ",
+		["ASSHOLE"] = "АЅЅНОLЕ",
+		["ANAL"] = "АΝ⁥⁥⁥⁥⁥⁥АL",
+		["BASTARD"] = "ВАЅТАRD",
+		["BONER"] = "⁥В⁥⁥O⁥⁥N⁥⁥Е⁥⁥R",
+		["BITCHES"] = "В￰￰￰￰￰￰￰I￰￰￰￰￰￰Т￰￰￰￰￰￰СНЕS",
+		["BITCH"] = "В￰￰￰￰￰￰￰I￰￰￰￰￰￰Т￰￰￰￰￰￰СН",
+		["BOOBS"] = "ВООВS",
+		["BOOB"] = "ВООВ",
+		["BUTTHOLE"] = "ВUТТ⁥⁥⁥⁥НOLЕ",
+		["BUTT"] = "ВUТТ",
+		["BOOTY"] = "ВООТΥ",
+		["CUNTS"] = "СU⁥⁥⁥⁥⁥⁥⁥⁥NТЅ",
+		["CUNT"] = "СU⁥⁥⁥⁥⁥⁥⁥⁥NТ",
+		["CUM"] = "СUМ",
+		["COCK"] = "СОСK",
+		["DISCORD"] = "DӀЅСОRD",
+		["DUMBASS"] = "DUMBАЅЅ",
+		["DICK"] = "D⁥⁥⁥⁥I󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕⁥⁥⁥⁥C󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕⁥⁥⁥⁥K",
+		["FAGGOT"] = "F󠀕󠀖󠀗󠀘￰￰￰￰￰￰￰￰￰￰￰￰￰￰￰￰󠀕󠀖󠀗󠀘А󠀕󠀖󠀗󠀘󠀕󠀖￰￰￰￰￰￰󠀕G⁥⁥󠀖󠀗󠀘󠀖󠀗󠀘⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥󠀘󠀘G󠀖󠀗󠀘󠀖󠀗󠀘￰￰￰￰￰￰￰О󠀖󠀗󠀘￰￰￰￰￰󠀖󠀗Т",
+		["FATASS"] = "F⁥⁥⁥А⁥⁥⁥ТА⁥⁥⁥Ѕ⁥⁥⁥Ѕ",
+		["FEMBOYS"] = "FЕМВОΥЅ",
+		["FEMBOY"] = "FЕМВОΥ",
+		["HITLER"] = "НӀ⁥⁥⁥⁥⁥⁥⁥⁥ТL⁥⁥⁥⁥⁥⁥⁥⁥Е⁥⁥R",
+		["HENTAI"] = "НЕ⁥⁥⁥⁥Ν⁥ТАӀ",
+		["HORNY"] = "НОRNY",
+		["HOES"] = "НОЕЅ",
+		["HOE"] = "НОЕ",
+		["KYS"] = "K⁥⁥⁥⁥⁥⁥⁥⁥Υ⁥⁥⁥S",
+		["LMFAO"] = "LМFАО",
+		["LMAO"] = "LМАО",
+		["MASTURBATE"] = "МАЅТURВАТΕ",
+		["NUDES"] = "ΝUDЕЅ",
+		["NAKED"] = "ΝΑKΕD",
+		["OMFG"] = "ОM⁥⁥⁥⁥⁥⁥⁥⁥FG",
+		["PENIS"] = "PEN⁥⁥ӀS",
+		["PUSSIES"] = "Р⁥⁥⁥U⁥⁥⁥Ѕ⁥⁥⁥S⁥⁥⁥Ӏ⁥⁥⁥Е⁥⁥⁥Ѕ",
+		["PUSSY"] = "Р⁥⁥⁥U⁥⁥⁥Ѕ⁥⁥⁥S⁥⁥⁥Υ",
+		["PISS"] = "РӀЅЅ",
+		["PORN"] = "РОRΝ",
+		["RETARD"] = "R⁥⁥⁥⁥E⁥⁥⁥T⁥⁥⁥⁥A⁥⁥⁥R⁥⁥⁥⁥D",
+		["RAPE"] = "RАРЕ",
+		["SHIT"] = "ЅH⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥IT",
+		["SEX"] = "ЅЕХ",
+		["TITTIES"] = "ТIТТIES",
+		["TITS"] = "ТIТЅ",
+		["THOT"] = "ТН⁥⁥⁥⁥⁥ОТ",
+		["THOTS"] = "ТН⁥⁥⁥⁥⁥ОТЅ",
+		["VIRGINITY"] = "V￰￰￰￰￰￰Ӏ￰￰￰￰￰￰￰￰R￰￰￰￰￰￰￰￰G￰￰￰￰￰￰￰￰￰Ӏ￰￰￰￰￰￰￰￰ΝITY",
+		["VIRGINS"] = "V￰￰￰￰￰￰I￰￰￰￰￰￰￰￰R￰￰￰￰￰￰￰￰G￰￰￰￰￰￰￰￰￰INS",
+		["VIRGIN"] = "V￰￰￰￰￰￰I￰￰￰￰￰￰￰￰R￰￰￰￰￰￰￰￰G￰￰￰￰￰￰￰￰￰I￰￰￰￰￰￰￰￰N",
+		["VAGINA"] = "V￰￰￰￰￰￰А￰￰￰￰￰￰￰￰G￰￰￰￰￰￰￰￰Ӏ￰￰￰￰￰￰￰￰￰N￰￰￰￰￰￰￰￰А",
+		["XXX"] = "X⁥⁥⁥⁥XX",
+		["WHORE"] = "W⁥⁥⁥Н⁥⁥⁥О⁥⁥⁥R⁥⁥⁥Е",
+		["blacked.com"] = "blacked.c⁥⁥⁥о⁥⁥⁥m", --Nsfw websites
+		["pornhub.com"] = "р⁥⁥⁥о⁥⁥⁥r⁥⁥⁥n⁥⁥⁥һ⁥⁥⁥u⁥⁥⁥b.c⁥⁥⁥о⁥⁥⁥m",
+		["xvideos.com"] = "x⁥⁥⁥⁥⁥⁥⁥v⁥⁥⁥⁥⁥⁥⁥і⁥⁥⁥⁥⁥d⁥⁥⁥⁥⁥⁥e⁥⁥⁥⁥⁥o⁥⁥⁥⁥⁥⁥⁥ѕ.c⁥⁥⁥om",
+		["https://blacked.com"] = "httрs:/⁥⁥⁥/blacked.c⁥⁥⁥о⁥⁥⁥m",
+		["PORNHUB.COM"] = "Р⁥⁥⁥О⁥⁥⁥R⁥⁥⁥Ν⁥⁥⁥Н⁥⁥⁥U⁥⁥⁥В.С⁥⁥⁥О⁥⁥⁥М⁥⁥⁥",
+		["Asshole"] = "аѕѕ⁥⁥⁥һоlе", --Capitals at the first letter
+		["Ass"] = "а⁥⁥⁥ѕ⁥⁥⁥ѕ",
+		["Arse"] = "аr⁥⁥ѕ⁥е",
+		["Anal"] = "аn⁥⁥⁥⁥аl",
+		["Blowjob"] = "Blow⁥⁥⁥j⁥⁥⁥о⁥⁥⁥b⁥⁥⁥",
+		["Boner"] = "⁥В⁥⁥o⁥⁥n⁥⁥е⁥⁥r",
+		["Boobies"] = "Bо⁥⁥⁥⁥⁥⁥⁥⁥оbіеs",
+		["Bullshit"] = "Bulӏsһ⁥⁥⁥⁥⁥⁥⁥⁥іt",
+		["Bastard"] = "Bas⁥⁥⁥⁥⁥⁥⁥⁥tard",
+		["Beaner"] = "B⁥⁥⁥е⁥⁥⁥а⁥⁥⁥n⁥⁥⁥е⁥⁥⁥r",
+		["Butthole"] = "Bu⁥⁥⁥⁥⁥⁥⁥⁥tthоle",
+		["Bootyhole"] = "B⁥⁥⁥о⁥⁥⁥о⁥⁥⁥t⁥⁥⁥уhole",
+		["Butt"] = "bu⁥⁥⁥⁥⁥⁥⁥⁥tt",
+		["Booty"] = "bооty",
+		["Boobs"] = "bооbѕ",
+		["Boob"] = "bооb",
+		["Breats"] = "Brеаѕtѕ",
+		["Bbc"] = "B⁥⁥⁥b⁥⁥⁥с",
+		["Cocaine"] = "с⁥⁥⁥о⁥⁥⁥с⁥⁥⁥а⁥⁥⁥i⁥⁥⁥n⁥⁥⁥е",
+		["Creampie"] = "с⁥⁥⁥r⁥⁥⁥е⁥⁥⁥а⁥⁥⁥m⁥⁥⁥р⁥⁥⁥i⁥⁥⁥е",
+		["Cum"] = "с⁥⁥⁥⁥um",
+		["Cunts"] = "сu⁥⁥⁥⁥⁥⁥⁥⁥ntѕ",
+		["Cunt"] = "c󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕u⁥⁥⁥⁥󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕n⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥t",
+		["Cock"] = "с⁥⁥⁥о⁥⁥⁥с⁥⁥⁥k",
+		["Cuck"] = "с⁥⁥⁥u⁥⁥⁥с⁥⁥⁥k",
+		["Cuckold"] = "с⁥⁥⁥u⁥⁥⁥с⁥⁥⁥k⁥⁥⁥о⁥⁥⁥ӏ⁥⁥⁥d⁥⁥⁥",
+		["Condoms"] = "с⁥⁥⁥о⁥⁥⁥n⁥⁥⁥d⁥⁥⁥о⁥⁥⁥m⁥⁥⁥s",
+		["Condom"] = "с⁥⁥⁥о⁥⁥⁥n⁥⁥⁥d⁥⁥⁥о⁥⁥⁥m",
+		["Coochies"] = "cooс⁥⁥⁥һ⁥⁥⁥i⁥⁥⁥es",
+		["Coochie"] = "с⁥⁥⁥о⁥⁥⁥o⁥⁥⁥с⁥⁥⁥һ⁥⁥⁥i⁥⁥⁥е",
+		["Dumbass"] = "Du⁥⁥⁥⁥⁥⁥mb⁥⁥⁥⁥⁥⁥аѕѕ",
+		["Discord"] = "Dіѕсоrd",
+		["Dickhead"] = "D󠀕󠀖󠀗󠀘￰￰￰￰￰󠀕󠀖󠀗󠀘і󠀕󠀖󠀗󠀘󠀕󠀖￰￰￰￰￰󠀗󠀘c󠀕￰￰￰￰￰󠀖󠀗󠀘󠀕󠀖󠀗󠀘k󠀗󠀘󠀗󠀘h󠀗󠀘￰￰￰￰￰󠀖󠀗󠀘󠀕󠀖ead",
+		["Dick"] = "D⁥⁥⁥⁥i󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕⁥⁥⁥⁥c󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕⁥⁥⁥⁥k",
+		["Damn"] = "D⁥⁥⁥а⁥⁥⁥m⁥⁥⁥n⁥⁥⁥",
+		["Fatass"] = "Fat￰￰￰а￰￰￰￰￰￰￰￰￰￰￰￰⁥ѕ￰￰ѕ",
+		["Fucked"] = "F￰￰￰￰￰￰uс￰￰￰￰￰￰￰￰k￰￰￰￰￰￰￰￰e￰￰￰￰d",
+		["Femboy"] = "Fеmbоy",
+		["Femboys"] = "Fеmbоys",
+		["Horny"] = "hоrnу",
+		["Hitler"] = "Нi⁥⁥⁥⁥⁥⁥⁥⁥tӏ⁥⁥⁥⁥⁥⁥⁥⁥е⁥⁥r",
+		["Hoes"] = "һоеѕ",
+		["Hoe"] = "һое",
+		["Kys"] = "K⁥⁥⁥⁥⁥⁥⁥⁥y⁥⁥⁥ѕ",
+		["Lmfao"] = "Lm⁥⁥⁥⁥⁥⁥⁥⁥fа⁥⁥о",
+		["Lmaoo"] = "ӏ⁥⁥⁥m⁥⁥⁥а⁥⁥⁥о⁥⁥⁥о",
+		["Motherfucker"] = "Mot￰￰￰￰￰￰￰h￰e￰rf￰￰￰￰￰u￰с￰￰￰￰￰￰￰￰k￰e￰￰￰￰￰￰￰￰r",
+		["Masturbates"] = "М⁥⁥⁥а⁥⁥⁥ѕ⁥⁥⁥t⁥⁥⁥u⁥⁥⁥r⁥⁥⁥b⁥⁥⁥а⁥⁥⁥t⁥⁥⁥е",
+		["Masturbating"] = "M⁥⁥⁥а⁥⁥⁥ѕ⁥⁥⁥t⁥⁥⁥u⁥⁥⁥r⁥⁥⁥b⁥⁥⁥а⁥⁥⁥t⁥⁥⁥ing",
+		["Meth"] = "Mе⁥⁥⁥⁥⁥⁥⁥⁥th",
+		["Naked"] = "Nаkеd",
+		["Nudes"] = "Nudеѕ",
+		["Orgasm"] = "оrg⁥⁥⁥⁥аѕm",
+		["Omfg"] = "оm⁥⁥⁥⁥⁥⁥⁥⁥fg",
+		["Pedophile"] = "p⁥⁥е⁥⁥⁥d⁥⁥⁥⁥⁥⁥⁥ор⁥⁥hіӏ⁥⁥⁥⁥⁥⁥⁥е",
+		["Pornhub"] = "роrnhub",
+		["Penis"] = "pen󠀕󠀖󠀗󠀘󠀕󠀖⁥⁥⁥⁥⁥⁥⁥⁥󠀕і󠀖󠀗󠀘󠀖󠀗ѕ",
+		["Porn"] = "роrn",
+		["Pussies"] = "р⁥⁥⁥u⁥⁥⁥s⁥⁥⁥s⁥⁥⁥i⁥⁥⁥е⁥⁥⁥s",
+		["Pussy"] = "р⁥⁥⁥u⁥⁥⁥s⁥⁥⁥s⁥⁥⁥у",
+		["Rape"] = "Rаре",
+		["Stripper"] = "Strірреr",
+		["Slave"] = "ѕ⁥⁥⁥ӏ⁥⁥⁥а⁥⁥⁥v⁥⁥⁥е",
+		["Seduce"] = "ѕеduсе",
+		["Slut"] = "ѕӏ⁥⁥⁥⁥⁥⁥⁥⁥ut",
+		["Shit"] = "⁥⁥⁥ѕ⁥⁥⁥h⁥⁥⁥i⁥⁥⁥t",
+		["Sexy"] = "ѕеху",
+		["Sex"] = "ѕ⁥⁥⁥е⁥⁥⁥х⁥⁥⁥",
+		["Retarded"] = "Rеtаrded",
+		["Retard"] = "R⁥⁥⁥⁥e⁥⁥⁥t⁥⁥⁥⁥a⁥⁥⁥r⁥⁥⁥⁥d",
+		["Titties"] = "T⁥⁥⁥⁥⁥⁥і⁥⁥⁥⁥⁥⁥t⁥⁥⁥⁥⁥⁥t⁥⁥⁥⁥⁥⁥і⁥⁥⁥⁥⁥⁥е⁥⁥⁥⁥⁥⁥ѕ",
+		["Thots"] = "T⁥⁥⁥⁥⁥⁥⁥⁥h⁥⁥⁥⁥⁥⁥⁥⁥otѕ",
+		["Thot"] = "T⁥⁥⁥⁥⁥⁥⁥⁥h⁥⁥⁥⁥⁥⁥⁥⁥ot",
+		["Tits"] = "T⁥⁥⁥⁥⁥⁥⁥⁥і⁥⁥⁥⁥⁥⁥⁥⁥ts",
+		["Tit"] = "Tіt",
+		["Virginity"] = "V￰￰￰￰￰￰і￰￰￰￰￰￰￰￰r￰￰￰￰￰￰￰￰g￰￰￰￰￰￰￰￰￰і￰￰￰￰￰￰￰￰n￰￰￰￰￰￰￰і￰￰￰￰t￰￰￰у",
+		["Virgin"] = "V￰￰￰￰￰￰і￰￰￰￰￰￰￰￰r￰￰￰￰￰￰￰￰g￰￰￰￰￰￰￰￰￰і￰￰￰￰￰￰￰￰n￰￰￰￰￰￰￰s",
+		["Vagina"] = "V󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕a󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕g󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕і󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕n󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕a",
+		["fuck you"] = "f󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖uc󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖ky󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖o󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖u",
+		["what the fuck"] = "wha⁥⁥⁥⁥⁥⁥tt⁥⁥⁥⁥⁥⁥һеf⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥uс⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥k",
+		["shut the fuck up"] = "sһ⁥⁥⁥⁥⁥⁥utt⁥⁥⁥⁥⁥⁥һеf⁥⁥⁥⁥⁥⁥⁥⁥⁥u⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥c⁥ku⁥⁥⁥⁥⁥⁥⁥⁥⁥p",
+		["go fuck yourself"] = "gof⁥⁥⁥⁥⁥⁥⁥⁥⁥u⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥c⁥kу⁥⁥⁥⁥⁥о⁥⁥urself",
+		["fuck"] = "f󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖uc󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖k", --Sometimes works
+		["fucking"] = "f󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖uc󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖king",
+		["Fuck"] = "F󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖uc󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖k",
+		["Fucking"] = "F󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖uc󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖king",
+		["FUCKING"] = " F󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕U󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕⁥⁥⁥⁥C󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕ΚӀ󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕N⁥⁥⁥⁥⁥⁥⁥⁥󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕G ",
+		["FUCKERS"] = "F󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕U󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕C󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕Κ󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕E󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕RS",
+		["FUCKER"] = "F󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕U󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕C󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕Κ󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕E󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕R",
+		["FUCK"] = "F￰￰￰￰￰￰UС￰￰￰￰￰￰￰￰Κ￰￰￰￰￰￰￰￰",
+		["bites your cock"] = "bitesyourсо⁥⁥⁥⁥⁥⁥⁥⁥⁥сk", --Sentences that dont work normally
+		["big black cock"] = "big black сосk",
+		["suck my cock retard"] = "ѕuсk my сосk ret⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥аrd",
+		["i pull all the bitches"] = "i pull all the bitсһеs",
+		["small penis"] = "small рen⁥⁥⁥⁥⁥⁥⁥⁥iѕ",
+		["nigger"] = "n⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥і⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥ggеr",
+		["suck my cock"] = "ѕ⁥⁥⁥u⁥⁥⁥с⁥⁥⁥kmyсо⁥⁥⁥сk",
+		["lets have sex"] = "⁥⁥⁥ӏ⁥⁥⁥е⁥⁥⁥t⁥⁥⁥ѕ ⁥⁥⁥һ⁥⁥⁥а⁥⁥⁥v⁥⁥⁥е⁥⁥⁥ ѕ⁥⁥⁥е⁥⁥⁥х⁥⁥⁥",
+		["I HAVE A MASSIVE COCK"] = "I HAVE A MASSIVE СОСK",
+		["SHUT THE FUCK UP"] = "SHUTTHEF￰￰￰￰￰￰UС￰￰￰￰￰￰￰￰ΚUР",
+		["I AM ABOUT TO CUM"] = "IАМ АВOU￰￰￰TTOС￰￰￰U￰￰￰М",
+		["wife"] = "wіfе", --Extra
+		["suck"] = "ѕuсk",
+		["love"] = "ӏ⁥⁥⁥о⁥⁥⁥⁥⁥⁥⁥⁥⁥vе",
+		["pregnant"] = "рrеgnаnt",
+		["mommy"] = "mоmmу",
+		["daddy"] = "d⁥⁥⁥а⁥⁥⁥d⁥⁥⁥d⁥⁥⁥у",
+		["WIFE"] = "WIFΕ",
+		["SUCK"] = "SUСK",
+		["pedo"] = "p⁥⁥е⁥⁥⁥d⁥⁥⁥⁥⁥⁥⁥о"
+}
+
+local default = ""
+
+local player = players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+local chatGui, chatBar = playerGui:WaitForChild("Chat")
+
+repeat task.wait() until chatGui:FindFirstChild("ChatBar", true)
+chatBar = chatGui:FindFirstChild("ChatBar", true)
+
+do
+    local randomstr = function()
+        local characters = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"}
+        local str = ""
+        local length = math.random(12, 32)
+    
+        for i = 1, length do
+            str = str .. characters[math.random(#characters)]
+        end
+        return str
+    end
+    task.spawn(function()
+        while wait(.1) do
+            if chatBar:IsFocused() then
+                chatService:FilterStringForBroadcast(randomstr(), player)
+            end
+        end
+    end)
+end
+
+local c = function()
+    for i = 1, 2 do
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/e Hey how are you doing?", "All")
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/e How are you doing?", "All")
+    end
+end
+
+local old
+old = hookmetamethod(game, "__namecall", newcclosure(function(self, ...)
+    local method = getnamecallmethod()
+    local args = {...}
+
+    if method == "FireServer" and self.Name == "SayMessageRequest" and #args == 2 and not checkcaller() then
+        local newMessage = args[1]
+        for i,v in pairs(custom_chars) do
+            local rep = string.gsub(newMessage, i, v .. "⁥")
+            newMessage = rep
+        end
+        newMessage = "" .. newMessage .. default
+
+        args[1] = newMessage
+        coroutine.wrap(c)
+        return old(self, unpack(args))
+    end
+    return old(self, ...)
+end))
+        end,
+})
+
+local Button = Home:CreateButton({
+ Name = "Fix bypasses",
+	SectionParent = PickupLinesSection0,
+   Callback = function()
+Interact = "Chat",
+game.StarterGui:SetCore("SendNotification", {Title="Info"; Text="The button prevents tagging; once clicked, it stops tagging the bypasses for a bit."; Duration=5;})
+      game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("abcdeABCDE12345~`|•√?x", "All")
+   end,  
+})
+
+local PickupLinesSection1 = PickupLines:CreateSection("lowecase A-Z", false)
+
+local TableOfPickUpLines = {
+"аѕѕ⁥⁥⁥һоlе", "а⁥⁥⁥ѕ⁥⁥⁥ѕ", "аr⁥⁥ѕ⁥е", "аn⁥⁥⁥⁥аl", "Blow⁥⁥⁥j⁥⁥⁥о⁥⁥⁥b⁥⁥⁥", "⁥В⁥⁥o⁥⁥n⁥⁥е⁥⁥r", "b￰￰i￰￰￰￰￰￰￰￰￰￰￰￰￰￰t￰￰￰￰￰￰￰c￰￰￰һes", "b󠀗󠀕i⁥⁥⁥⁥t󠀗󠀕󠀕󠀕󠀕⁥⁥⁥⁥сһ", "bо⁥⁥⁥⁥⁥⁥⁥⁥оbіеs", "bulӏsһ⁥⁥⁥⁥⁥⁥⁥⁥іt", "bas⁥⁥⁥⁥⁥⁥⁥⁥tard", "b⁥⁥⁥е⁥⁥⁥а⁥⁥⁥n⁥⁥⁥е⁥⁥⁥r", "bu⁥⁥⁥⁥⁥⁥⁥⁥tthоle", "b⁥⁥⁥о⁥⁥⁥о⁥⁥⁥t⁥⁥⁥уhole",
+ "bu⁥⁥⁥⁥⁥⁥⁥⁥tt", "bооty", "bооbѕ", "bооb", "brеаѕtѕ", "b⁥⁥⁥b⁥⁥⁥с", "с⁥⁥⁥о⁥⁥⁥с⁥⁥⁥а⁥⁥⁥i⁥⁥⁥n⁥⁥⁥е", "с⁥⁥⁥r⁥⁥⁥е⁥⁥⁥а⁥⁥⁥m⁥⁥⁥р⁥⁥⁥i⁥⁥⁥е", "с⁥⁥⁥⁥umming", "с⁥⁥⁥⁥um", "сu⁥⁥⁥⁥⁥⁥⁥⁥ntѕ", "c󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕u⁥⁥⁥⁥󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕n⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥t", "с⁥⁥⁥о⁥⁥⁥с⁥⁥⁥k", "с⁥⁥⁥u⁥⁥⁥с⁥⁥⁥k", 
+"с⁥⁥⁥u⁥⁥⁥с⁥⁥⁥k⁥⁥⁥о⁥⁥⁥ӏ⁥⁥⁥d⁥⁥⁥", "с⁥⁥⁥о⁥⁥⁥n⁥⁥⁥d⁥⁥⁥о⁥⁥⁥m⁥⁥⁥s", "с⁥⁥⁥о⁥⁥⁥n⁥⁥⁥d⁥⁥⁥о⁥⁥⁥m", "cooс⁥⁥⁥һ⁥⁥⁥i⁥⁥⁥es", "с⁥⁥⁥о⁥⁥⁥o⁥⁥⁥с⁥⁥⁥һ⁥⁥⁥i⁥⁥⁥е", "сu⁥⁥⁥⁥⁥⁥n⁥⁥⁥⁥⁥⁥nу", "du⁥⁥⁥⁥⁥⁥mb⁥⁥⁥⁥⁥⁥аѕѕ", "d￰￰￰￰￰і￰￰￰￰￰c￰￰￰￰￰kh￰￰￰￰￰ead", "dіѕсоrd", "d⁥⁥⁥а⁥⁥⁥m⁥⁥⁥n⁥⁥⁥", "d⁥⁥⁥⁥i󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕⁥⁥⁥⁥c󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕⁥⁥⁥⁥k", "fat￰￰￰а￰￰￰￰￰￰￰￰￰￰￰￰⁥ѕ￰￰ѕ",
+ "f￰￰￰￰￰￰uс￰￰￰￰￰￰￰￰k￰￰￰￰￰￰￰￰e￰￰￰￰d", "fеmbоys", "fеmbоy", "fa⁥⁥⁥⁥⁥⁥n⁥⁥⁥⁥⁥⁥nу", "hоrnу", "Нi⁥⁥⁥⁥⁥⁥⁥⁥tӏ⁥⁥⁥⁥⁥⁥⁥⁥е⁥⁥r", "h󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕e󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕n󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕t󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕a󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕i", "һоеѕ", "һое", 
+"k⁥⁥⁥⁥⁥⁥⁥⁥y⁥⁥⁥ѕ", "Lm⁥⁥⁥⁥⁥⁥⁥⁥f⁥⁥ао", "ӏm⁥⁥⁥⁥⁥⁥⁥⁥fа⁥⁥о", "ӏ󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕⁥⁥⁥⁥mao", "mot￰￰￰￰￰￰￰h￰e￰rf￰￰￰￰￰u￰с￰￰￰￰￰￰￰￰k￰e￰￰￰￰￰￰￰￰r",
+ "m󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕a󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕ѕ󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕t󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕u󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕r󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕b󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕a󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕t󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕e", "m⁥⁥⁥а⁥⁥⁥ѕ⁥⁥⁥t⁥⁥⁥u⁥⁥⁥r⁥⁥⁥b⁥⁥⁥а⁥⁥⁥t⁥⁥⁥ing", "m⁥⁥⁥⁥o⁥⁥⁥⁥ӏ⁥⁥⁥⁥е⁥⁥⁥ѕ⁥⁥⁥⁥t", "mе⁥⁥⁥⁥⁥⁥⁥⁥th", "nаkеd", "nudеѕ", "n󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕u󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕d󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕e", "оrg⁥⁥⁥⁥аѕm", "оm⁥⁥⁥⁥⁥⁥⁥⁥fg", "p⁥⁥е⁥⁥⁥d⁥⁥⁥⁥⁥⁥⁥ор⁥⁥hіӏ⁥⁥⁥⁥⁥⁥⁥е", "роrnhub", "pen󠀕󠀖󠀗󠀘󠀕󠀖⁥⁥⁥⁥⁥⁥⁥⁥󠀕і󠀖󠀗󠀘󠀖󠀗ѕ",
+ "роrn", "р⁥⁥⁥u⁥⁥⁥s⁥⁥⁥s⁥⁥⁥i⁥⁥⁥е⁥⁥⁥s", "р⁥⁥⁥u⁥⁥⁥s⁥⁥⁥s⁥⁥⁥у", "rеtаrded", "r⁥⁥⁥⁥⁥⁥⁥e⁥⁥⁥⁥⁥⁥t⁥⁥⁥⁥⁥⁥⁥a⁥⁥⁥⁥⁥⁥r⁥⁥⁥⁥⁥⁥⁥d", "rаре", "ѕtrірреr", "ѕ⁥⁥⁥ӏ⁥⁥⁥а⁥⁥⁥v⁥⁥⁥е", "ѕ󠀕󠀖󠀗󠀘⁥⁥⁥⁥⁥⁥⁥⁥emen", "ѕеduсе", "ѕӏ⁥⁥⁥⁥⁥⁥⁥⁥ut", "⁥⁥⁥ѕ⁥⁥⁥h⁥⁥⁥i⁥⁥⁥t", "ѕеху", "ѕ⁥⁥⁥е⁥⁥⁥х⁥⁥⁥",
+"⁥⁥⁥t⁥⁥⁥⁥⁥⁥і⁥⁥⁥⁥⁥⁥t⁥⁥⁥⁥⁥⁥t⁥⁥⁥⁥⁥⁥і⁥⁥⁥⁥⁥⁥е⁥⁥⁥⁥⁥⁥ѕ", "t⁥⁥⁥⁥⁥⁥⁥⁥h⁥⁥⁥⁥⁥⁥⁥⁥otѕ", "t⁥⁥⁥⁥⁥⁥⁥⁥h⁥⁥⁥⁥⁥⁥⁥⁥ot", "t⁥⁥⁥⁥⁥⁥⁥⁥і⁥⁥⁥⁥⁥⁥⁥⁥ts", "tіt", 
+"v￰￰￰￰￰￰і￰￰￰￰￰￰￰￰r￰￰￰￰￰￰￰￰g￰￰￰￰￰￰￰￰￰і￰￰￰￰￰￰￰￰n￰￰￰￰￰￰￰і￰￰￰￰t￰￰￰у", "vir￰g￰￰￰￰￰￰￰￰￰і￰￰￰￰￰￰￰￰n￰￰￰￰￰￰￰s", "v󠀕￰￰￰￰￰￰󠀘і󠀖￰￰￰￰￰￰￰￰󠀘r󠀕￰￰￰￰￰￰￰￰󠀖g󠀖￰￰￰￰￰￰￰￰￰󠀘і󠀘￰￰￰￰￰￰￰￰n", "v󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕a󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕g󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕і󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕n󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕a", "w⁥⁥⁥һ⁥⁥⁥о⁥⁥⁥r⁥⁥⁥е"
+}
+
+for i, v in pairs(TableOfPickUpLines) do
+	PickupLines:CreateButton({
+		Name = v,
+		Interact = "Chat",
+        SectionParent = PickupLinesSection1,
+		Callback = function()
+			Chat(v)
+		end,
+	})
+end
+
+local PickupLinesSection2 = PickupLines:CreateSection("Uppercase/Capital A-Z", false)
+
+local TableOfPickUpLines = {
+"АЅЅ", "АЅЅНОLЕ", "АΝ⁥⁥⁥⁥⁥⁥АL", "ВАЅТАRD", "⁥В⁥⁥O⁥⁥N⁥⁥Е⁥⁥R", "В￰￰￰￰￰￰￰I￰￰￰￰￰￰Т￰￰￰￰￰￰СНЕS", "В￰￰￰￰￰￰￰I￰￰￰￰￰￰Т￰￰￰￰￰￰СН", "ВООВS", "ВООВ", "ВUТТ⁥⁥⁥⁥НOLЕ", 
+"ВUТТ", "ВООТΥ", "СU⁥⁥⁥⁥⁥⁥⁥⁥NТЅ", "СU⁥⁥⁥⁥⁥⁥⁥⁥NТ", "СUМ", "СОСK", "DӀЅСОRD", "DUMBАЅЅ", "D⁥⁥⁥⁥I󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕⁥⁥⁥⁥C󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕⁥⁥⁥⁥K", "F󠀕󠀖󠀗󠀘￰￰￰￰￰￰￰￰￰￰￰￰￰￰￰￰󠀕󠀖󠀗󠀘А󠀕󠀖󠀗󠀘󠀕󠀖￰￰￰￰￰￰󠀕G⁥⁥󠀖󠀗󠀘󠀖󠀗󠀘⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥󠀘󠀘G󠀖󠀗󠀘󠀖󠀗󠀘￰￰￰￰￰￰￰О󠀖󠀗󠀘￰￰￰￰￰󠀖󠀗Т", "F⁥⁥⁥А⁥⁥⁥ТА⁥⁥⁥Ѕ⁥⁥⁥Ѕ", 
+"FЕМВОΥЅ", "FЕМВОΥ", "F󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕U󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕⁥⁥⁥⁥C󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕ΚӀ󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕N⁥⁥⁥⁥⁥⁥⁥⁥󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕G", "F󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕U󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕C󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕Κ󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕E󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕RS", "F⁥⁥⁥⁥U󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕⁥⁥⁥⁥C󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕⁥⁥⁥⁥ΚS", "НӀ⁥⁥⁥⁥⁥⁥⁥⁥ТL⁥⁥⁥⁥⁥⁥⁥⁥Е⁥⁥R", "НЕ⁥⁥⁥⁥Ν⁥ТАӀ", "НОRNY", "НОЕЅ", "НОE",
+"K⁥⁥⁥⁥⁥⁥⁥⁥Υ⁥⁥⁥S", "LМFАО", "LМАО", "MOTHERF￰￰￰￰￰￰UС￰￰￰￰￰￰￰￰Κ￰￰￰￰￰￰￰￰E￰￰￰￰￰￰￰R", "МАЅТURВАТΕ",
+ "МETH", "ΝΑKΕD", "ΝUDЕЅ", "N󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕U󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕D󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀕󠀖󠀕E", "ОM⁥⁥⁥⁥⁥⁥⁥⁥FG", "PEN⁥⁥ӀS", "Р⁥⁥⁥U⁥⁥⁥Ѕ⁥⁥⁥S⁥⁥⁥Ӏ⁥⁥⁥Е⁥⁥⁥Ѕ", "Р⁥⁥⁥U⁥⁥⁥Ѕ⁥⁥⁥S⁥⁥⁥Υ", "РӀЅЅ", "РОRΝ", "R⁥⁥⁥⁥⁥⁥⁥E⁥⁥⁥⁥⁥⁥T⁥⁥⁥⁥⁥⁥⁥A⁥⁥⁥⁥⁥⁥R⁥⁥⁥⁥⁥⁥⁥D",
+ "RАРЕ", "ЅH⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥IT", "SL⁥⁥⁥⁥UT", "Ѕ⁥⁥⁥⁥L⁥⁥⁥⁥А⁥⁥⁥⁥V⁥⁥⁥⁥Е", "ЅЕХ", "ТIТТIES", "ТIТЅ", "ТН⁥⁥⁥⁥⁥ОТЅ", "ТН⁥⁥⁥⁥⁥ОТ", "V￰￰￰￰￰￰Ӏ￰￰￰￰￰￰￰￰R￰￰￰￰￰￰￰￰G￰￰￰￰￰￰￰￰￰Ӏ￰￰￰￰￰￰￰￰ΝITY", "V￰￰￰￰￰￰I￰￰￰￰￰￰￰￰R￰￰￰￰￰￰￰￰G￰￰￰￰￰￰￰￰￰INS", "V￰￰￰￰￰￰I￰￰￰￰￰￰￰￰R￰￰￰￰￰￰￰￰G￰￰￰￰￰￰￰￰￰I￰￰￰￰￰￰￰￰N", 
+"V￰￰￰￰￰￰А￰￰￰￰￰￰￰￰G￰￰￰￰￰￰￰￰Ӏ￰￰￰￰￰￰￰￰￰N￰￰￰￰￰￰￰￰А", "X⁥⁥⁥⁥XX", "W⁥⁥⁥Н⁥⁥⁥О⁥⁥⁥R⁥⁥⁥Е", " " 
+}
+
+for i, v in pairs(TableOfPickUpLines) do
+	PickupLines:CreateButton({
+		Name = v,
+		Interact = "Chat",
+        SectionParent = PickupLinesSection2,
+		Callback = function()
+			Chat(v)
+		end,
+	})
+end
+
+local Sentences = Window:CreateTab("Sentences")
+local Sentences1 = Sentences:CreateSection("lowercase A-Z", false)
+
+local TableOfSentences = {
+"аn⁥⁥⁥⁥аl ѕ⁥⁥⁥е⁥⁥⁥х⁥⁥⁥ pls", "аn⁥⁥⁥⁥аl ѕ⁥⁥⁥е⁥⁥⁥х", "а⁥⁥⁥⁥ѕѕ s⁥⁥⁥⁥ех pls", "В⁥⁥⁥⁥о⁥⁥⁥⁥о⁥⁥⁥⁥m⁥⁥⁥⁥ с⁥⁥⁥⁥о⁥⁥⁥⁥с⁥⁥⁥⁥k⁥⁥⁥⁥ѕ⁥⁥⁥⁥h⁥⁥⁥⁥о⁥⁥⁥⁥t⁥⁥⁥⁥!","b⁥⁥⁥o⁥⁥⁥n⁥⁥⁥е⁥⁥⁥r⁥⁥⁥ ⁥⁥⁥а⁥⁥⁥ӏ⁥⁥⁥е⁥⁥⁥r⁥⁥⁥t⁥⁥⁥!", "bu⁥⁥⁥⁥⁥⁥⁥⁥tt ѕ⁥⁥⁥еx", "b⁥ig со⁥⁥⁥сk",
+"b⁥⁥⁥о⁥⁥⁥о⁥⁥⁥b⁥⁥⁥ѕ⁥⁥⁥ ⁥⁥⁥о⁥⁥⁥r⁥⁥⁥ ⁥⁥⁥а⁥⁥⁥ѕ⁥⁥⁥ѕ?", "Віg аѕѕ thіghѕ", "big black сосk", "Віg аѕѕ", "Ве mу wіfе!", "Саn І ѕее thоѕе сutе bооbѕ оf уоurѕ?", "сосk ѕuсkеr", "С⁥⁥⁥⁥um on me please!",
+"с⁥⁥⁥⁥um рӏеаѕе", "сut yоurself.", "сhild роrn", "Cо⁥⁥⁥⁥⁥⁥⁥⁥⁥сki⁥⁥⁥nс⁥⁥⁥оmin⁥⁥⁥g!", "Cо⁥⁥⁥⁥⁥⁥⁥⁥⁥сki⁥⁥⁥nbedroom", "С⁥⁥⁥о⁥⁥⁥с⁥⁥⁥k⁥⁥⁥ ⁥⁥⁥о⁥⁥⁥r⁥⁥⁥ ⁥⁥⁥В⁥⁥⁥о⁥⁥⁥о⁥⁥⁥b⁥⁥⁥ѕ⁥⁥⁥?", "d⁥⁥⁥а⁥⁥⁥m⁥⁥⁥n⁥⁥⁥ ⁥⁥⁥у⁥⁥⁥о⁥⁥⁥u⁥⁥⁥ ⁥⁥⁥g⁥⁥⁥о⁥⁥⁥t⁥⁥⁥ ⁥⁥⁥а⁥⁥⁥ ⁥⁥⁥ӏ⁥⁥⁥о⁥⁥⁥n⁥⁥⁥g⁥⁥⁥ ⁥⁥⁥ѕ⁥⁥⁥с⁥⁥⁥һ⁥⁥⁥ӏ⁥⁥⁥о⁥⁥⁥n⁥⁥⁥g⁥⁥⁥ ⁥⁥⁥d⁥⁥⁥а⁥⁥⁥d⁥⁥⁥d⁥⁥⁥у", "d⁥⁥⁥⁥⁥⁥i⁥⁥⁥⁥rt⁥⁥⁥у ⁥⁥h⁥⁥⁥⁥⁥о⁥⁥⁥⁥⁥⁥⁥е", "f󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖uc󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖ky󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖o󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖urself","f󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖uc󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖ky󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖o󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖u", "frее роrn", "f󠀘󠀕󠀖󠀗аt￰￰￰a￰￰￰￰￰￰￰￰￰￰￰￰⁥ѕ￰￰ѕһ⁥⁥⁥⁥⁥⁥⁥⁥⁥󠀘󠀕󠀖󠀗ое",
+"f󠀘󠀕󠀖󠀗аt ￰￰￰a￰￰￰￰￰￰￰￰￰￰￰￰⁥ѕs", "gо еnd уоur оwn lіfе.", "На⁥⁥⁥⁥⁥iӏ Нi⁥⁥⁥⁥⁥⁥⁥⁥tӏ⁥⁥⁥⁥⁥⁥⁥⁥е⁥⁥r", "h⁥⁥⁥а⁥⁥⁥r⁥⁥⁥d⁥⁥⁥с⁥⁥⁥о⁥⁥⁥r⁥⁥⁥е⁥⁥⁥ ѕ⁥⁥⁥е⁥⁥⁥х⁥⁥⁥", "I⁥⁥⁥⁥⁥⁥ е⁥⁥⁥⁥⁥⁥⁥аt ⁥⁥р⁥⁥⁥u⁥⁥⁥⁥s⁥⁥sу", "⁥⁥⁥і ӏ⁥⁥⁥о⁥⁥⁥v⁥⁥⁥е ⁥⁥⁥m⁥⁥⁥і⁥⁥⁥n⁥⁥⁥о⁥⁥⁥r⁥⁥⁥ѕ",
+"і ӏоvе уоu", "I⁥⁥⁥⁥⁥⁥ ӏ⁥⁥о⁥⁥vе ⁥⁥с⁥⁥⁥⁥⁥⁥⁥⁥⁥о⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥с⁥⁥⁥⁥kѕ", "і⁥⁥⁥ ⁥⁥⁥ӏ⁥⁥⁥о⁥⁥⁥⁥⁥⁥⁥⁥⁥vе bооbѕ", "і ӏіkе tіttіеs", "іm gоnnа mаkе уоu рrеgnаnt mоmmу", "і'm ѕеху, аnd уου knοw іt", "і'm hоrnу ѕο mοаn", "і'm mad hоrnу", "і'm gοnnа bаng уοu һаrd", "і'm ѕо hаrd rn", 
+"Ι wουӏd ӏіkе tο ѕее ѕοmе tіttіеs", "і wаnnа kmѕ", "і wаnnа ѕmаѕh уоu", "і wаnt tо drіnk уоur brеаѕtѕ", "І dо ѕеху thіngѕ", "І bаngеd уоur gіrl ѕо һаrd", "I dont give a sһіt.", "I love ѕеx", "І'ӏӏ mаkе уоu рrеgnаnt", "imagine getting no bitсһеs", "kіӏl уоurѕеӏf", "keep mоаning", "ӏ⁥⁥⁥е⁥⁥⁥t⁥⁥⁥ѕ⁥⁥⁥ ⁥⁥⁥d⁥⁥⁥о⁥⁥⁥ ⁥⁥⁥d⁥⁥⁥о⁥⁥⁥g⁥⁥⁥g⁥⁥⁥у⁥⁥⁥ ⁥⁥⁥ѕ⁥⁥⁥t⁥⁥⁥у⁥⁥⁥ӏ⁥⁥⁥е", "⁥⁥⁥ӏ⁥⁥⁥е⁥⁥⁥t⁥⁥⁥ѕ ⁥⁥⁥һ⁥⁥⁥а⁥⁥⁥v⁥⁥⁥е⁥⁥⁥ ѕ⁥⁥⁥е⁥⁥⁥х⁥⁥⁥", "ӏеt mе ѕqυіѕһ tһοѕе tіttіеs", 
+"Ι⁥⁥⁥g⁥⁥⁥b⁥⁥⁥t⁥⁥⁥q⁥⁥⁥+⁥⁥⁥ ⁥⁥⁥і⁥⁥⁥ѕ⁥⁥⁥ ⁥⁥⁥r⁥⁥⁥е⁥⁥⁥l⁥⁥⁥а⁥⁥⁥t⁥⁥⁥е⁥⁥⁥d t⁥⁥⁥о⁥⁥⁥ а⁥⁥⁥u⁥⁥⁥t⁥⁥⁥і⁥⁥⁥ѕ⁥⁥⁥m", "Mind if you ӏеt mе ѕqυіѕһ tһοѕе tіttіеs", "mу ⁥⁥⁥с⁥⁥⁥о⁥⁥⁥n⁥⁥⁥d⁥⁥⁥о⁥⁥⁥m fеӏӏ оff!",
+"Мr Вrеаѕt іѕ ѕо сооl", "myсо⁥⁥⁥⁥⁥⁥⁥⁥⁥сkisdirty", "mаkе mе рrеgnаnt", "Νаkеd Вοуѕ", "Νаkеd Gіrӏѕ", "р⁥⁥⁥u⁥⁥⁥⁥s⁥⁥sу ӏi⁥⁥с⁥⁥⁥k⁥⁥е⁥⁥⁥⁥⁥⁥r",
+ "rареmе", "ѕ⁥⁥⁥р⁥⁥⁥а⁥⁥⁥n⁥⁥⁥k⁥⁥⁥ ⁥⁥⁥m⁥⁥⁥е⁥⁥⁥ ⁥⁥⁥d⁥⁥⁥а⁥⁥⁥d⁥⁥⁥d⁥⁥⁥у", "ѕ⁥⁥⁥е⁥⁥⁥х⁥⁥⁥ ⁥⁥⁥ѕ⁥⁥⁥ӏ⁥⁥⁥а⁥⁥⁥v⁥⁥⁥е", "Ѕwееt сосk dudе", "ѕmd һ⁥⁥⁥о⁥⁥⁥е", "ѕ⁥⁥⁥u⁥⁥⁥с⁥⁥⁥kmyсо⁥⁥⁥сk",
+ "Ѕwееt со⁥⁥⁥⁥⁥⁥⁥⁥⁥сkуоugоtuр thеrе", "sһ⁥⁥⁥⁥⁥⁥utt⁥⁥⁥⁥⁥⁥һеf⁥⁥⁥⁥⁥⁥⁥⁥⁥u⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥c⁥ku⁥⁥⁥⁥⁥⁥⁥⁥⁥p", "S⁥⁥⁥һ⁥⁥⁥ut уоgо⁥⁥⁥о⁥⁥⁥f⁥⁥⁥у а⁥⁥⁥ѕ⁥⁥⁥ѕ u⁥⁥⁥p", "shutyobrokeаѕѕup", "ѕuсk my сосk ret⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥аrd", "sonofab󠀕󠀖󠀗󠀘￰￰󠀕󠀖󠀗󠀘і󠀕󠀖󠀗󠀘󠀕󠀖￰￰￰￰￰￰￰￰￰￰￰￰￰￰󠀗󠀘t󠀕￰￰￰￰￰￰￰󠀖󠀗󠀘󠀕󠀖󠀗󠀘с󠀗󠀘󠀗󠀘￰￰￰󠀗󠀘һ", "small рen⁥⁥⁥⁥⁥⁥⁥⁥iѕ",
+"Т⁥⁥⁥h⁥⁥⁥е⁥⁥⁥r⁥⁥⁥е⁥⁥⁥ѕ ⁥⁥⁥с⁥⁥⁥⁥u⁥⁥⁥m⁥⁥⁥ ⁥⁥⁥е⁥⁥⁥v⁥⁥⁥е⁥⁥⁥r⁥⁥⁥у⁥⁥⁥w⁥⁥⁥h⁥⁥⁥е⁥⁥⁥r⁥⁥⁥е⁥⁥⁥!", "thаt b⁥⁥⁥b⁥⁥⁥с dоnt рlау", "u⁥⁥⁥r⁥⁥⁥ ⁥⁥⁥g⁥⁥⁥f⁥⁥⁥ ⁥⁥⁥w⁥⁥⁥а⁥⁥⁥ѕ⁥⁥⁥ ⁥⁥⁥с⁥⁥⁥r⁥⁥⁥а⁥⁥⁥v⁥⁥⁥і⁥⁥⁥n⁥⁥⁥g⁥⁥⁥ ⁥⁥⁥m⁥⁥⁥у⁥⁥⁥ ⁥⁥⁥r⁥⁥⁥а⁥⁥⁥g⁥⁥⁥і⁥⁥⁥n⁥⁥⁥g⁥⁥⁥ ⁥⁥⁥ѕ⁥⁥⁥с⁥⁥⁥h⁥⁥⁥ӏ⁥⁥⁥о⁥⁥⁥n⁥⁥⁥g", "ur mоmѕ bооtу іѕ dеlісіоuѕ",
+"wаnnа һаvе s⁥⁥⁥⁥ех?", "wѕg bbg уоu lооkіn ѕеху", "wha⁥⁥⁥⁥⁥⁥tt⁥⁥⁥⁥⁥⁥һеf⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥uс⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥k", "wаnnа ѕее ѕоmе b⁥⁥⁥b⁥⁥⁥с", "y⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥o⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥ustu⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥pidn⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥і⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥ggеr", "уоu lіkе tо rаре аnd ѕuсk blасk оіlеd uр mеn", "уо mу ѕhаft іѕ һаrd, mіnd јеrkіng іt?",
+"у⁥⁥⁥о⁥⁥⁥u⁥⁥⁥'r⁥⁥⁥е⁥⁥⁥ ⁥⁥⁥ѕ⁥⁥⁥u⁥⁥⁥с⁥⁥⁥һ⁥⁥⁥ ⁥⁥⁥а⁥⁥⁥ ⁥⁥⁥w⁥⁥⁥һ⁥⁥⁥о⁥⁥⁥r⁥⁥⁥е", "у⁥⁥⁥о⁥⁥⁥u⁥⁥⁥'⁥⁥⁥r⁥⁥⁥е⁥⁥⁥ ⁥⁥⁥а⁥⁥⁥ p⁥⁥е⁥⁥⁥d⁥⁥⁥⁥⁥⁥⁥ор⁥⁥hіӏ⁥⁥⁥⁥⁥⁥⁥е", "you pathetic ѕӏ⁥⁥⁥⁥⁥⁥⁥⁥ut", "уоu'rе а рu⁥⁥⁥ssу", "уоu'rе ѕо ѕеху"
+}
+
+for i, v in pairs(TableOfSentences) do
+	PickupLines:CreateButton({
+		Name = v,
+		Interact = "Chat",
+        SectionParent =Sentences1,
+		Callback = function()
+			Chat(v)
+		end,
+	})
+end
+    
+local Sentences2 = Sentences:CreateSection("Uppercase/Capital A-Z", false)
+    
+    local TableOfSentences = {
+"ВΕ МΥ WIFΕ!", "ВІG ВООТΥ LАТІΝАЅ", "ВІG ВООТΥ АЅІАΝЅ", "ВІG ВООТΥ FЕМВОΥЅ", "ВІG ВООТΥ", "BIG ВООВS", "С⁥⁥⁥⁥⁥АN І Р⁥⁥⁥⁥ІЅЅ ІNЅIDE YOU⁥⁥⁥R В⁥⁥⁥U⁥⁥⁥⁥ТТ⁥⁥⁥⁥НOLЕ?", "С⁥⁥⁥⁥⁥АN І Р⁥⁥⁥⁥ІЅЅ ON YOU?",
+ "СОСKI⁥⁥⁥NBEDROOM", "СUМОΝМЕ", "С￰￰￰UМONМΥFА⁥⁥⁥⁥⁥⁥⁥⁥СЕ", "DО ΥОU НАVЕ Т⁥⁥⁥І⁥⁥⁥Т⁥⁥⁥Ѕ?", "EAT Р⁥⁥⁥U⁥⁥⁥Ѕ⁥⁥⁥Ѕ⁥⁥⁥Y ВІ⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥TСH", "F⁥⁥⁥АТАЅ⁥⁥Ѕ НОЕ", "F⁥⁥⁥А⁥⁥⁥Т А⁥⁥⁥Ѕ⁥⁥⁥Ѕ", "FRЕЕ НЕ⁥⁥⁥⁥Ν⁥ТАӀ",
+"FU⁥⁥⁥⁥⁥⁥⁥⁥СΚ⁥⁥⁥⁥⁥⁥⁥⁥Y⁥⁥⁥⁥⁥⁥⁥⁥O⁥⁥⁥⁥U", "H⁥⁥⁥Е⁥⁥⁥L⁥⁥⁥P⁥⁥⁥!⁥⁥⁥ T⁥⁥⁥H⁥⁥⁥Е⁥⁥⁥R⁥⁥⁥Е⁥⁥⁥'⁥⁥⁥S⁥⁥⁥ А⁥⁥⁥ С⁥⁥⁥О⁥⁥⁥C⁥⁥⁥K⁥⁥⁥ I⁥⁥⁥N⁥⁥⁥ М⁥⁥⁥Y⁥⁥⁥ А⁥⁥⁥⁥Ѕ⁥⁥⁥Ѕ", "НЕLР! ТНЕRЕS А НОЕ СНАSING МЕ", "IАМ АВOU￰￰￰TTOС￰￰￰U￰￰￰М",
+ "Ӏ ЕАТ РUЅЅҮ", "I⁥⁥⁥⁥⁥⁥⁥⁥ P⁥⁥⁥⁥⁥⁥⁥⁥R⁥⁥⁥⁥⁥⁥⁥⁥E⁥⁥⁥⁥⁥⁥⁥⁥F⁥⁥⁥⁥⁥⁥⁥⁥E⁥⁥⁥⁥⁥⁥⁥⁥R⁥ Р⁥⁥UЅ⁥⁥Ѕ⁥⁥Ү⁥", "I HAVE A MASSIVE СОСK", "I Н⁥⁥⁥А⁥⁥⁥⁥D А⁥⁥⁥W⁥⁥⁥⁥ЕS⁥⁥⁥⁥⁥ОМ⁥⁥⁥Е⁥⁥⁥ S⁥⁥⁥Е⁥⁥⁥⁥Х⁥⁥ W⁥⁥⁥I⁥⁥Т⁥⁥⁥⁥Н U⁥⁥⁥R М⁥⁥⁥⁥⁥О⁥⁥⁥⁥М!!!!", "ILL МΑKΕ ΥОU РRΕGΝΑΝТ", 
+"ІМ GОΝΝА ВАΝG ΥОU НАRD", "IM MAD НОRNY", "K⁥⁥⁥⁥⁥⁥⁥⁥Υ⁥⁥⁥S BІ⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥TCH", "L⁥⁥⁥⁥Е⁥⁥⁥⁥Т⁥⁥⁥⁥ М⁥⁥⁥⁥Е⁥⁥⁥⁥ Н⁥⁥⁥⁥А⁥⁥⁥⁥V⁥⁥⁥⁥Е⁥⁥⁥⁥ А⁥⁥⁥⁥ Т⁥⁥⁥⁥А⁥⁥⁥⁥Ѕ⁥⁥⁥⁥Т⁥⁥⁥⁥Е⁥⁥⁥ О⁥⁥⁥⁥F⁥⁥⁥⁥ Т⁥⁥⁥⁥Н⁥⁥⁥⁥А⁥⁥⁥⁥Т⁥⁥⁥⁥ Р⁥⁥⁥U⁥⁥⁥Ѕ⁥⁥⁥S⁥⁥⁥Υ⁥⁥⁥", "LЕТ МЕ НАVЕ А ТАЅТЕ ОF ТНАТ СОСΚ",
+"LЕТ МЕ ЅQUІЅН ТНОЅЕ ТІТТІЕЅ", "L⁥⁥⁥Е⁥⁥⁥Т⁥⁥⁥Ѕ⁥⁥⁥ ⁥⁥⁥Н⁥⁥⁥А⁥⁥⁥V⁥⁥⁥Е⁥⁥⁥ ⁥⁥⁥Ѕ⁥⁥⁥Е⁥⁥⁥Х", "LET'SF￰￰￰￰￰￰UС￰￰￰￰￰￰￰￰Κ", "МΥ С⁥⁥⁥О⁥⁥⁥Ν⁥⁥⁥D⁥⁥⁥О⁥⁥⁥М FЕLL ОFF!", "ΝΑKΕD GIRLЅ", "ΝАΚЕD ВОΥЅ", "oh my god, not this DUМВ АЅЅ", 
+"РUТΥ￰￰￰ОU￰￰RСО⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥СKINMY А￰￰￰Ѕ￰￰￰Ѕ", "STRAIGHT POWER M￰￰￰￰￰O￰￰￰￰￰T￰￰￰￰￰H￰￰￰￰￰E￰￰￰￰￰R￰￰￰￰￰F￰￰￰￰￰￰UС￰￰￰￰￰￰￰￰Κ￰￰￰￰￰￰￰￰E￰￰￰￰￰￰￰RS", "SUСKМΥСО⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥СK", "SHUTTHEF￰￰￰￰￰￰UС￰￰￰￰￰￰￰￰ΚUР", 
+"SH⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥UTUPF⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥AGGOT", "SHUT UP CU⁥⁥⁥⁥⁥⁥⁥⁥⁥NТ", "SНUT UP НОЕ", "ЅHAKEТН⁥⁥⁥⁥⁥⁥⁥⁥АТ А￰￰￰Ѕ￰￰￰Ѕ", "SO󠀖󠀗󠀘󠀕󠀖NO󠀖󠀗󠀘󠀕󠀖FAВ￰￰￰￰￰￰￰I￰￰￰￰￰￰TCH",
+ "Ѕ⁥⁥⁥⁥Н⁥⁥⁥⁥Ι⁥⁥⁥⁥Т⁥⁥⁥⁥ Ν⁥⁥⁥⁥О⁥⁥⁥⁥О⁥⁥⁥⁥О⁥⁥⁥⁥О⁥⁥⁥⁥О⁥⁥⁥⁥О⁥⁥⁥⁥О⁥⁥⁥⁥", "ΥОUАRЕЅО А￰￰￰Ѕ￰￰￰Ѕ АТTHIЅGАМЕ", " "
+}
+
+for i, v in pairs(TableOfSentences) do
+	PickupLines:CreateButton({
+		Name = v,
+		Interact = "Chat",
+        SectionParent = Sentences2,
+		Callback = function()
+			Chat(v)
+		end,
+	})
+end
+
+local RP = Window:CreateTab("Roleplay")
+local RPSection1 = RP:CreateSection("RP A-Z", false)
+
+
+local TableOfRP = {
+
+"аh уеѕ~ *m⁥⁥⁥о⁥⁥⁥а⁥⁥⁥n⁥⁥⁥ѕ* уеѕ һаrdеr~", "*bitesyourсо⁥⁥⁥⁥⁥⁥⁥⁥⁥сk*", "*с⁥⁥⁥⁥umѕ*", "*ӏооkѕ undеr ѕkіrt* wоw nісе bаlӏѕ brо", "*ma⁥⁥⁥⁥⁥⁥⁥⁥st⁥⁥⁥⁥⁥⁥⁥⁥urbates*", "*mоаns*", "nісе bаllѕ *ѕlарѕ thеm*", "*r ареs*", "*ѕuсkѕ сосk*", "*s⁥⁥⁥һ⁥⁥⁥і⁥⁥⁥t⁥⁥⁥s*", " "
+}
+
+for i, v in pairs(TableOfRP) do
+	PickupLines:CreateButton({
+		Name = v,
+		Interact = "Chat",
+        SectionParent = RPSection1,
+		Callback = function()
+			Chat(v)
+		end,
+	})
+end
+
+local NSFWWebsites = Window:CreateTab("NSFW Websites")
+local NSFWWebsites1 = NSFWWebsites:CreateSection("Not Safe For Work websites", false)
+
+local TableOfNSFW = {
+
+"blacked.c⁥⁥⁥о⁥⁥⁥m", "р⁥⁥⁥о⁥⁥⁥r⁥⁥⁥n⁥⁥⁥һ⁥⁥⁥u⁥⁥⁥b.c⁥⁥⁥о⁥⁥⁥m", "r⁥⁥⁥u⁥⁥⁥ӏ⁥⁥⁥е3⁥⁥⁥4.ххх", "е⁥⁥⁥6⁥⁥⁥2⁥⁥⁥1⁥⁥⁥.n⁥⁥⁥е⁥⁥⁥t", "x⁥⁥⁥⁥⁥⁥⁥v⁥⁥⁥⁥⁥⁥⁥і⁥⁥⁥⁥⁥d⁥⁥⁥⁥⁥⁥e⁥⁥⁥⁥⁥o⁥⁥⁥⁥⁥⁥⁥ѕ.c⁥⁥⁥om", "Р⁥⁥⁥О⁥⁥⁥R⁥⁥⁥Ν⁥⁥⁥Н⁥⁥⁥U⁥⁥⁥В.С⁥⁥⁥О⁥⁥⁥М⁥⁥⁥"
+ }
+
+for i, v in pairs(TableOfNSFW) do
+	PickupLines:CreateButton({
+		Name = v,
+		Interact = "Chat",
+        SectionParent = NSFWWebsites1,
+		Callback = function()
+			Chat(v)
+		end,
+	})
+end
+
+local NSFWWebsites2 = NSFWWebsites:CreateSection("full links", false)
+
+local TableOfNSFW = {
+
+"httрs:/⁥⁥⁥/blacked.c⁥⁥⁥о⁥⁥⁥m", "ht󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗tps󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗:/󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗/⁥⁥⁥p󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗or󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗nh󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗ub󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗.󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗c󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗󠀘󠀕󠀖󠀗om", "МAS⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥⁥TURBATING TO HТТРЅ:/⁥⁥⁥/РОRΝHUB.C⁥⁥⁥OM", " "
+ }
+
+for i, v in pairs(TableOfNSFW) do
+	PickupLines:CreateButton({
+		Name = v,
+		Interact = "Chat",
+        SectionParent = NSFWWebsites2,
+		Callback = function()
+			Chat(v)
+		end,
+	})
+end
+
+local NGTab = Window:CreateTab("NOT LEGIT", nil) -- Title, Image
+local NGSection1 = NGTab:CreateSection("Note")
+local Note = NGTab:CreateParagraph({
+	Title = "Info",
+	Content = "'NOT LEGIT' on this script means that the bypasses DON'T look like it was said normally",
+}, NGSection1)
+local NGSection2 = NGTab:CreateSection("words or scentences that look fake (not A-Z)", false)
+
+
+local Button = NGTab:CreateButton({
+ Name = "a hard r",
+   Callback = function()
+      game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("niġġer", "All")
+   end,  
+}) 
+
+local Button = NGTab:CreateButton({
+ Name = "a lil n word",
+   Callback = function()
+      game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("п⁥iɡ⁥ɡ ⁥а", "All")
+   end,  
+})
+
+local Button = NGTab:CreateButton({
+ Name = "fuck",
+   Callback = function()
+      game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("fu￰￰￰￰￰￰￰￰￰￰çķ", "All")
+   end,  
+})
+
+local Button = NGTab:CreateButton({
+ Name = "weed",
+   Callback = function()
+      game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("шeed", "All")
+   end,  
+})
+
+local Button = NGTab:CreateButton({
+ Name = "KKK",
+   Callback = function()
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ККК", "All")
+   end,  
+})
+
+local Button = NGTab:CreateButton({
+ Name = "KΥS ВIТСН",
+   Callback = function()
+      game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("К⁥⁥⁥⁥⁥⁥⁥⁥Υ⁥⁥⁥SВ￰￰￰￰￰￰￰I￰￰￰￰￰￰Т￰￰￰￰￰￰СН", "All")
+   end,  
+})
+
+local Button = NGTab:CreateButton({
+ Name = "karl was here",
+   Callback = function()
+     end,
+    })   
+ 
+local TPTab = Window:CreateTab("Misc", nil)
+
+local Paragraph = Home:CreateParagraph({
+	Title = "Recommended Games",
+	Content = "Rate My Avatar       Public Bathroom Simlator       Natrual Disaster Survival       Ragdoll Engine       Spray Paint!    ",
+}, HomeSection1)
+
+local TPSectionw = TPTab:CreateSection("hax and stuff")
+local Button = TPTab:CreateButton({
+   Name = "Infinite Jump (Toggle)",
+   Callback = function()
+       --Toggles the infinite jump between on or off on every script run
+_G.infinjump = not _G.infinjump
+
+if _G.infinJumpStarted == nil then
+	--Ensures this only runs once to save resources
+	_G.infinJumpStarted = true
+	
+	--Notifies readiness
+	game.StarterGui:SetCore("SendNotification", {Title="Misc"; Text="Infinite Jump Activated!"; Duration=5;})
+
+	--The actual infinite jump
+	local plr = game:GetService('Players').LocalPlayer
+	local m = plr:GetMouse()
+	m.KeyDown:connect(function(k)
+		if _G.infinjump then
+			if k:byte() == 32 then
+			humanoid = game:GetService'Players'.LocalPlayer.Character:FindFirstChildOfClass('Humanoid')
+			humanoid:ChangeState('Jumping')
+			wait()
+			humanoid:ChangeState('Seated')
+			end
+		end
+	end)
+end
+   end,
+})
+
+local Slider = TPTab:CreateSlider({
+   Name = "WalkSpeed",
+   Range = {1, 350},
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "sliderws", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
+   end,
+})
+
+local Slider = TPTab:CreateSlider({
+   Name = "JumpPower",
+   Range = {1, 350},
+   Increment = 1,
+   Suffix = "JumpPower",
+   CurrentValue = 16,
+   Flag = "sliderjp", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
+   end,
+    })
+    
+local Button = TPTab:CreateButton({
+ Name = "Anti fling",
+   Callback = function()
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local Player = Players.LocalPlayer
+ 
+RunService.Stepped:Connect(function()
+    for _, CoPlayer in pairs(Players:GetChildren()) do
+        if CoPlayer ~= Player and CoPlayer.Character then
+            for _, Part in pairs(CoPlayer.Character:GetChildren()) do
+                if Part.Name == "HumanoidRootPart" then
+                    Part.CanCollide = false
+                end
+            end
+        end
+    end
+ 
+    for _, Accessory in pairs(workspace:GetChildren()) do
+        if Accessory:IsA("Accessory") and Accessory:FindFirstChildWhichIsA("Part") then
+            Accessory:FindFirstChildWhichIsA("Part"):Destroy()
+        end
+    end
+end)
+   end,
+    })
+
+local Button = TPTab:CreateButton({
+ Name = "Infinite Yield",
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end,
+    })
+    
+local Note = TPTab:CreateParagraph({
+	Title = "Hello",
+	Content = "The end :) (for now)",
+}, TPSection1)
